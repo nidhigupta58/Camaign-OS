@@ -1,6 +1,7 @@
 # Campaign OS: Ecosystem Intelligence Console
 
-![Campaign OS Banner](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2000)
+![Campaign OS Banner](https://github.com/user-attachments/assets/277d1fda-d310-46b7-90ef-2c9839f13bcc)
+
 
 ## 🌐 The Product
 **Campaign OS** is a high-fidelity campaign management and simulation platform designed for grassroots initiatives, non-profits, and community organizers. It acts as an "Operating System" for social impact, providing a unified console to manage multiple campaign nodes, track real-time community engagement, and simulate ecosystem growth.
@@ -23,18 +24,25 @@ Manage dozens of initiatives simultaneously. Each campaign (or "node") has its o
 - **Awareness**: Focus on reach and member growth.
 - **Feedback**: Focus on community insight and discussion.
 - **Voting**: Focus on decentralized decision-making through polls.
+<img width="1859" height="880" alt="image" src="https://github.com/user-attachments/assets/e2a107c2-12ac-4c4a-918c-1fa0e092a742" />
+
 
 ### 2. Live Activity Simulation
 The system features a built-in **Activity Simulation Engine**. It generates synthetic community behavior—joins, likes, comments, and votes—allowing you to test your ecosystem's performance and visualization under various load conditions.
+<img width="1859" height="880" alt="image" src="https://github.com/user-attachments/assets/bdf3f472-c280-4eb0-a08b-65bc47df497d" />
 
 ### 3. Global Ecosystem Feed
 An aggregated "Intelligence Stream" that pulls real-time posts and sentiment data from every active campaign into a single master view.
+<img width="1859" height="880" alt="image" src="https://github.com/user-attachments/assets/49cb5247-a505-454f-9fef-947e636e69d1" />
+
 
 ### 4. Node Telemetry & Analytics
 Deep-dive into performance metrics including:
 - **Retention Rate**: Tracking member long-term commitment.
 - **Engagement Velocity**: Real-time activity tracking via Area and Bar charts.
 - **Sync Protocol**: Manual node reconciliation functionality to ensure local state aligns with global metadata.
+<img width="1859" height="880" alt="image" src="https://github.com/user-attachments/assets/76a9302d-c2e8-4512-b318-6c656085ec49" />
+
 
 ### 5. Seamless Portability (Share Logic)
 Every campaign node is fully portable. The built-in sharing system generates a base64-encoded metadata string that can be shared across domains. The system is designed to be **auto-adaptable** to any host domain using dynamic origin detection.
@@ -46,6 +54,8 @@ Campaign OS is built with a **Technical Brutalist** yet polished aesthetic:
 - **Typography**: Inter (Sans) for UI clarity and JetBrains Mono for technical telemetry data.
 - **Color Palette**: A "Slate & Indigo" core, moving away from default gradients towards architectural depth and high-contrast logic gates.
 - **Motion**: Purposeful layout animations using `motion` to reinforce structural changes (e.g., drawer transitions, filter expansions).
+<img width="1859" height="880" alt="image" src="https://github.com/user-attachments/assets/16e6e834-fb02-459b-bd03-5d70c9d7c8d8" />
+
 
 ---
 
@@ -70,7 +80,7 @@ Campaign OS is built with a **Technical Brutalist** yet polished aesthetic:
 ### Installation
 1. **Clone the repository**:
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/nidhigupta58/Camaign-OS.git
    cd campaign-os
    ```
 
