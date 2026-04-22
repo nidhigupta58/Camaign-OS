@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      /**
+       * FINAL RESILIENCE SHIM: fetch assignment protection.
+       * 
+       * Ensures window.fetch is assignment-safe. 
+       * Some library logic (SDKs, polyfills) will fail fatally if this assignment throws.
+       */
+      (function() {
+        function protect(obj) {
+          try {
+            var original = obj.fetch;
+            if (typeof original !== 'function') return;
+            
+            var desc = Object.getOwnPropertyDescriptor(obj, 'fetch') || 
+                       Object.getOwnPropertyDescriptor(Object.getPrototypeOf(obj), 'fetch');
+            
+            if (desc && desc.configurable === false) return;
+
+            var current = original;
+            Object.defineProperty(obj, 'fetch', {
+              configurable: true,
+              enumerable: true,
+              get: function() { return current; },
+              set: function(v) { current = v; }
+            });
+          } catch (e) {}
+        }
+        protect(window);
+        if (typeof self !== 'undefined') protect(self);
+        if (typeof globalThis !== 'undefined') protect(globalThis);
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campaign OS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
